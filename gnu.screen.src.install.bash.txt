@@ -1,0 +1,10 @@
+
+wget https://ftp.gnu.org/gnu/screen/screen-4.8.0.tar.gz
+wget https://www.linuxfromscratch.org/patches/blfs/svn/screen-4.8.0-upstream_fixes-1.patch
+sudo yum -y install ncurses-devel
+tar zxvf screen-4.8.0.tar.gz
+cd screen-4.8.0/
+autogen.sh
+configure
+make
+sudo make install
